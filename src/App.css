@@ -1,0 +1,60 @@
+body{
+  background: linear-gradient(to bottom, #020111 60%,#20202c 100%); 
+}
+
+nav{
+  margin: 10px auto;
+  max-width: 80%;
+  border-radius: 10px;
+  border: 2px solid #4666FF;
+  
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around
+}
+nav ul li{
+  padding: 10px 20px;
+  font-size: 18px;
+}
+nav ul li:hover{
+  cursor: pointer;
+  color:#4666FF;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+  color:#fff;
+}
+
+#card {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  max-width: 500px ;
+  text-align: center;
+  background-image:url(https://image.freepik.com/free-vector/night-sky-with-stars_1378-675.jpg) ;
+  color: #ffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid #4666FF;
+}
+
+#card img{
+  max-width: 70%;
+  max-height: 60%;
+  margin: 20px auto;
+}
+
+button{
+  margin: 20px auto;
+  height:40px;
+  width:40%;
+  background: linear-gradient(to bottom, #20202c 0%,#515175 100%); 
+  border: 2px solid #243582;
+  color: #fff;
+}
