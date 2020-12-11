@@ -9,22 +9,16 @@ export default class App extends React.Component {
     this.state = { page: 1 }
 
   }
-  showPersons(e) {
-    this.setState({ page: 1 })
-  }
-
-  showPlanets(e) {
-    this.setState({ page: 2 })
-  }
-
-  showStarshps(e) {
-    this.setState({ page: 3 })
+  show(page ) {
+    this.setState({ page })
   }
   render() {
     return (
       <div className="App">
-        <Header showPersons={this.showPersons.bind(this)} showPlanets={this.showPlanets.bind(this)} 
-        showStarshps={this.showStarshps.bind(this)}/>,
+        <Header 
+          showPersons={this.show.bind(this, 1)} 
+          showPlanets={this.show.bind(this, 2)}  
+          showStarshps={this.show.bind(this, 3)}/>, 
         <SwService page={this.state.page} />
       </div>
     )
